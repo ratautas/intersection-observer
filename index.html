@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intersection Observer</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="app__sentry" id="mobile"></div>
+      <div class="app__sentry" id="tablet"></div>
+      <div class="app__sentry" id="header"></div>
+
+      <header class="app__header header">
+        <div class="header__logo">LOGO</div>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Link 1</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Link 2</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Link 3</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Link 4</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="app__page">
+        <div class="app__container container" id="sticker-observer">
+          <section class="app__section">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et
+              augue fermentum, suscipit augue in, placerat nunc. Sed ac nisl
+              ipsum. Aenean eget leo tincidunt, ultrices tellus a, condimentum
+              nibh. Donec commodo lobortis tortor, a aliquam mauris ultrices id.
+              Sed consequat non urna lobortis ultrices. Aenean ornare sit amet
+              enim ac venenatis. Donec id convallis ante. Maecenas nec justo at
+              urna cursus aliquet eu sit amet lacus. Donec eget nisl ut urna
+              porta consectetur non nec leo. Proin eget libero vel erat ornare
+              facilisis.
+            </p>
+          </section>
+          <div class="app__sticker" id="sticker-sentry">
+            I should stick when I reach the top
+          </div>
+          <section class="app__section"></section>
+          <section class="app__section"></section>
+          <section class="app__section"></section>
+          <div class="list">
+            <ol>
+              <li>resize listener</li>
+              <li>show/hide navbar</li>
+              <li>sticky element tracker</li>
+              <li>infinite scrolling</li>
+            </ol>
+          </div>
+
+          <div class="list">
+            <ol>
+              <li>will-change</li>
+              <li>element enters/leaves viewport</li>
+              <li>lazy loading</li>
+            </ol>
+          </div>
+
+          <div class="text">
+            <p>
+              Sed viverra ante commodo consequat accumsan. Suspendisse suscipit
+              elementum diam et malesuada. Mauris feugiat viverra bibendum. Cras
+              quis sapien facilisis, aliquet urna luctus, maximus nisl. Proin id
+              ante suscipit, scelerisque ante ut, accumsan diam. Suspendisse
+              dignissim eget velit vestibulum mollis. Nam scelerisque, libero
+              finibus aliquet laoreet, eros ipsum ornare sem, et auctor ipsum
+              libero id dolor. Morbi eget mi sed metus accumsan lacinia sed
+              vitae odio. Quisque ultrices porttitor arcu vitae lobortis.
+              Suspendisse molestie, quam luctus mattis sodales, lorem quam
+              malesuada dui, sed fermentum nisi eros eget sem. Mauris semper
+              massa dolor, non egestas quam malesuada vitae. Nunc vulputate, dui
+              eu viverra pharetra, ligula tellus tempus magna, sit amet gravida
+              dolor enim vel ex.
+            </p>
+            <p>
+              Nullam a posuere risus, eget semper neque. Sed porta interdum
+              aliquet. Mauris eros turpis, lobortis eget dui volutpat, ornare
+              molestie ante. Nullam feugiat est eget ultrices fermentum. Nulla
+              posuere, tellus sodales viverra finibus, orci velit bibendum nunc,
+              non facilisis eros turpis eu ipsum. Praesent egestas eros eu lorem
+              fringilla, eget egestas quam mattis. Vestibulum eget varius odio,
+              eget aliquam quam. Vestibulum venenatis mollis nulla luctus
+              ultrices. Orci varius natoque penatibus et magnis dis parturient
+              montes, nascetur ridiculus mus.
+            </p>
+            <p>
+              Curabitur ante nulla, blandit non vehicula vel, laoreet quis
+              ligula. In tristique facilisis nibh ac maximus. Duis nisl est,
+              aliquet vel dolor sed, tempor dictum arcu. Etiam ut ligula eget
+              ligula blandit pulvinar vel eu turpis. Etiam egestas lacus eget
+              tortor tincidunt, et pulvinar nisi volutpat. Sed ullamcorper
+              mollis molestie. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Fusce sem erat, pharetra iaculis libero vel,
+              vestibulum blandit mi. Proin volutpat arcu id velit volutpat, vel
+              tincidunt urna ornare.
+            </p>
+            <p>
+              Phasellus pellentesque posuere tellus sed feugiat. Proin metus
+              augue, fermentum quis dui ac, dignissim pharetra augue. Etiam
+              mollis magna enim, non mollis turpis congue vitae. Quisque eget
+              purus augue. Donec nec cursus enim, sit amet aliquam nulla. Donec
+              dignissim metus vitae odio posuere, eu aliquet libero cursus.
+              Quisque lacus nibh, eleifend convallis varius id, bibendum
+              condimentum lectus. Praesent vitae augue augue. Integer semper sem
+              vitae libero varius volutpat. Phasellus vel mi ipsum. Ut euismod,
+              eros feugiat semper pharetra, urna risus egestas mauris, ac
+              elementum lectus lorem in sem. Nullam a arcu et justo tincidunt
+              rhoncus. Morbi mollis imperdiet risus eu vulputate. Curabitur quis
+              tempor nunc, eget pulvinar purus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et
+              augue fermentum, suscipit augue in, placerat nunc. Sed ac nisl
+              ipsum. Aenean eget leo tincidunt, ultrices tellus a, condimentum
+              nibh. Donec commodo lobortis tortor, a aliquam mauris ultrices id.
+              Sed consequat non urna lobortis ultrices. Aenean ornare sit amet
+              enim ac venenatis. Donec id convallis ante. Maecenas nec justo at
+              urna cursus aliquet eu sit amet lacus. Donec eget nisl ut urna
+              porta consectetur non nec leo. Proin eget libero vel erat ornare
+              facilisis.
+            </p>
+            <p>
+              Sed viverra ante commodo consequat accumsan. Suspendisse suscipit
+              elementum diam et malesuada. Mauris feugiat viverra bibendum. Cras
+              quis sapien facilisis, aliquet urna luctus, maximus nisl. Proin id
+              ante suscipit, scelerisque ante ut, accumsan diam. Suspendisse
+              dignissim eget velit vestibulum mollis. Nam scelerisque, libero
+              finibus aliquet laoreet, eros ipsum ornare sem, et auctor ipsum
+              libero id dolor. Morbi eget mi sed metus accumsan lacinia sed
+              vitae odio. Quisque ultrices porttitor arcu vitae lobortis.
+              Suspendisse molestie, quam luctus mattis sodales, lorem quam
+              malesuada dui, sed fermentum nisi eros eget sem. Mauris semper
+              massa dolor, non egestas quam malesuada vitae. Nunc vulputate, dui
+              eu viverra pharetra, ligula tellus tempus magna, sit amet gravida
+              dolor enim vel ex.
+            </p>
+            <p>
+              Nullam a posuere risus, eget semper neque. Sed porta interdum
+              aliquet. Mauris eros turpis, lobortis eget dui volutpat, ornare
+              molestie ante. Nullam feugiat est eget ultrices fermentum. Nulla
+              posuere, tellus sodales viverra finibus, orci velit bibendum nunc,
+              non facilisis eros turpis eu ipsum. Praesent egestas eros eu lorem
+              fringilla, eget egestas quam mattis. Vestibulum eget varius odio,
+              eget aliquam quam. Vestibulum venenatis mollis nulla luctus
+              ultrices. Orci varius natoque penatibus et magnis dis parturient
+              montes, nascetur ridiculus mus.
+            </p>
+            <p>
+              Curabitur ante nulla, blandit non vehicula vel, laoreet quis
+              ligula. In tristique facilisis nibh ac maximus. Duis nisl est,
+              aliquet vel dolor sed, tempor dictum arcu. Etiam ut ligula eget
+              ligula blandit pulvinar vel eu turpis. Etiam egestas lacus eget
+              tortor tincidunt, et pulvinar nisi volutpat. Sed ullamcorper
+              mollis molestie. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Fusce sem erat, pharetra iaculis libero vel,
+              vestibulum blandit mi. Proin volutpat arcu id velit volutpat, vel
+              tincidunt urna ornare.
+            </p>
+            <p>
+              Phasellus pellentesque posuere tellus sed feugiat. Proin metus
+              augue, fermentum quis dui ac, dignissim pharetra augue. Etiam
+              mollis magna enim, non mollis turpis congue vitae. Quisque eget
+              purus augue. Donec nec cursus enim, sit amet aliquam nulla. Donec
+              dignissim metus vitae odio posuere, eu aliquet libero cursus.
+              Quisque lacus nibh, eleifend convallis varius id, bibendum
+              condimentum lectus. Praesent vitae augue augue. Integer semper sem
+              vitae libero varius volutpat. Phasellus vel mi ipsum. Ut euismod,
+              eros feugiat semper pharetra, urna risus egestas mauris, ac
+              elementum lectus lorem in sem. Nullam a arcu et justo tincidunt
+              rhoncus. Morbi mollis imperdiet risus eu vulputate. Curabitur quis
+              tempor nunc, eget pulvinar purus.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
