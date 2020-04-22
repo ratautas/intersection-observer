@@ -35,6 +35,10 @@ $color-primary: #ff3454;
 .app {
   font-family: 'Avenir Next', sans-serif;
   color: $color-black;
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
   &__sentry {
     position: fixed;
     top: 0;
@@ -83,6 +87,14 @@ $color-primary: #ff3454;
     left: 0;
     top: 86px;
     position: sticky;
+    z-index: 10;
+  }
+  &__sticker-sentry {
+    height: 100px;
+    background-color: black;
+    z-index: 11;
+    position: relative;
+    margin-bottom: -100px;
   }
 }
 
