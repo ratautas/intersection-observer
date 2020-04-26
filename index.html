@@ -19,11 +19,31 @@
       </header>
 
       <main class="app__page">
+        <div class="app__hero hero">
+          <div class="hero__image"></div>
+        </div>
         <div class="app__container container" id="section-observer">
           <aside class="app__sidebar sidebar">
             <div class="sidebar__stats">
-              banner banner banner banner banner banner banner banner banner
-              banner banner banner banner banner
+              <div class="list">
+                <ol>
+                  <li>
+                    perdaryt projektą į grąžų dizainą ir atskirti komponentinį
+                    layoutą
+                  </li>
+                  <li>
+                    padaryti skirtingus fintus mobile/tablet/desktop, pvz su/be
+                    hero image
+                  </li>
+                  <li>toggle header (with various height on devices)</li>
+                  <li>will-change</li>
+                  <li>element enters/leaves viewport</li>
+                  <li>lazy loading</li>
+                  <li>resize listener</li>
+                  <li>infinite scrolling</li>
+                  <li>sticky element tracker</li>
+                </ol>
+              </div>
             </div>
             <nav class="sidebar__nav nav" data-nav>
               <i class="nav__sentry" data-nav-sentry></i>
@@ -68,10 +88,7 @@
             </nav>
           </aside>
           <article class="app__content">
-            <!-- <div class="app__section-observer" id="section-observer"></div> -->
             <section class="app__section" data-section="section1">
-              <div class="app__section-sentinel" data-section-top></div>
-              <div class="app__section-sentinel" data-section-bottom></div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et
                 augue fermentum, suscipit augue in, placerat nunc. Sed ac nisl
@@ -97,6 +114,13 @@
                 tincidunt rhoncus. Morbi mollis imperdiet risus eu vulputate.
                 Curabitur quis tempor nunc, eget pulvinar purus.
               </p>
+              <video
+                playsinline
+                muted
+                loop
+                src="https://storage.coverr.co/videos/Z3czsnELFSDPtk02qLQV9FrDNPwdXx4d2?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTg3ODk4MzA2fQ.KB6pI-pnQbFPRzSVHWzKulOfAU912w8hoUA4RgE1a1c"
+                poster="https://storage.coverr.co/posters/Main_Street"
+              ></video>
               <p>
                 Phasellus pellentesque posuere tellus sed feugiat. Proin metus
                 augue, fermentum quis dui ac, dignissim pharetra augue. Etiam
@@ -139,6 +163,11 @@
                 tincidunt rhoncus. Morbi mollis imperdiet risus eu vulputate.
                 Curabitur quis tempor nunc, eget pulvinar purus.
               </p>
+              <img
+                alt="Lazy example"
+                data-src="https://images.pexels.com/photos/2149908/pexels-photo-2149908.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
+                loading="lazy"
+              />
             </section>
             <section class="app__section" data-section="section2">
               <p>
@@ -156,6 +185,30 @@
                 malesuada vitae. Nunc vulputate, dui eu viverra pharetra, ligula
                 tellus tempus magna, sit amet gravida dolor enim vel ex.
               </p>
+              <img
+                alt="Lazy example"
+                data-src="https://images.pexels.com/photos/2149908/pexels-photo-2149908.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
+                loading="lazy"
+              />
+              <p>
+                Phasellus pellentesque posuere tellus sed feugiat. Proin metus
+                augue, fermentum quis dui ac, dignissim pharetra augue. Etiam
+                mollis magna enim, non mollis turpis congue vitae. Quisque eget
+                purus augue. Donec nec cursus enim, sit amet aliquam nulla.
+                Donec dignissim metus vitae odio posuere, eu aliquet libero
+                cursus. Quisque lacus nibh, eleifend convallis varius id,
+                bibendum condimentum lectus. Praesent vitae augue augue. Integer
+                semper sem vitae libero varius volutpat. Phasellus vel mi ipsum.
+                Ut euismod, eros feugiat semper pharetra, urna risus egestas
+                mauris, ac elementum lectus lorem in sem. Nullam a arcu et justo
+                tincidunt rhoncus. Morbi mollis imperdiet risus eu vulputate.
+                Curabitur quis tempor nunc, eget pulvinar purus.
+              </p>
+              <img
+                alt="Lazy example"
+                data-src="https://images.pexels.com/photos/2149908/pexels-photo-2149908.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
+                loading="lazy"
+              />
               <p>
                 Phasellus pellentesque posuere tellus sed feugiat. Proin metus
                 augue, fermentum quis dui ac, dignissim pharetra augue. Etiam
@@ -184,20 +237,11 @@
                 tincidunt rhoncus. Morbi mollis imperdiet risus eu vulputate.
                 Curabitur quis tempor nunc, eget pulvinar purus.
               </p>
-              <p>
-                Phasellus pellentesque posuere tellus sed feugiat. Proin metus
-                augue, fermentum quis dui ac, dignissim pharetra augue. Etiam
-                mollis magna enim, non mollis turpis congue vitae. Quisque eget
-                purus augue. Donec nec cursus enim, sit amet aliquam nulla.
-                Donec dignissim metus vitae odio posuere, eu aliquet libero
-                cursus. Quisque lacus nibh, eleifend convallis varius id,
-                bibendum condimentum lectus. Praesent vitae augue augue. Integer
-                semper sem vitae libero varius volutpat. Phasellus vel mi ipsum.
-                Ut euismod, eros feugiat semper pharetra, urna risus egestas
-                mauris, ac elementum lectus lorem in sem. Nullam a arcu et justo
-                tincidunt rhoncus. Morbi mollis imperdiet risus eu vulputate.
-                Curabitur quis tempor nunc, eget pulvinar purus.
-              </p>
+              <img
+                alt="Lazy example"
+                data-src="https://images.pexels.com/photos/2149908/pexels-photo-2149908.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
+                loading="lazy"
+              />
               <p>
                 Phasellus pellentesque posuere tellus sed feugiat. Proin metus
                 augue, fermentum quis dui ac, dignissim pharetra augue. Etiam
@@ -357,22 +401,6 @@
                 Curabitur quis tempor nunc, eget pulvinar purus.
               </p>
             </section>
-            <div class="list">
-              <ol>
-                <li>resize listener</li>
-                <li>show/hide navbar</li>
-                <li>sticky element tracker</li>
-                <li>infinite scrolling</li>
-              </ol>
-            </div>
-
-            <div class="list">
-              <ol>
-                <li>will-change</li>
-                <li>element enters/leaves viewport</li>
-                <li>lazy loading</li>
-              </ol>
-            </div>
             <section class="app__section" id="fetch-result"></section>
             <div class="app__fetch-sentry" id="fetch-sentry"></div>
           </article>

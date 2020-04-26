@@ -1,13 +1,8 @@
 const $$sections = document.querySelectorAll("[data-section]");
 
-const getNavLink = entry => {
-  const {
-    target: {
-      dataset: { section }
-    }
-  } = entry;
-  return document.querySelector(`[data-nav-link=${section}]`);
-};
+// const getNavLink = e => {
+//   return document.querySelector(`[data-nav-link=${e.target.dataset.section}]`);
+// };
 
 let currentEntry;
 let nextEntry;
@@ -15,14 +10,27 @@ let nextEntry;
 const sectionObserver = new IntersectionObserver(
   entries => {
     const interesectingEntry = entries.find(entry => entry.isIntersecting);
-    if (interesectingEntry && !currentEntry) {
-      currentEntry = interesectingEntry;
-      getNavLink(currentEntry).classList.add("is-active");
-    } else if (interesectingEntry && currentEntry) {
-      nextEntry = interesectingEntry;
-    } else if (!interesectingEntry) {
-      getNavLink(currentEntry).classList.remove("is-active");
-      getNavLink(nextEntry).classList.add("is-active");
+    if (interesectingEntry) {
+      if (currentEntry) {
+        nextEntry = interesectingEntry;
+      } else {
+        currentEntry = interesectingEntry;
+        // const $navLink = getNavLink(currentEntry);
+        // const hash = $navLink.getAttribute("href");
+        // $navLink.classList.add("is-active");
+        // if (window.location.hash !== hash) {
+        //   history.pushState({}, window.title, hash);
+        // }
+      }
+    } else {
+      // getNavLink(currentEntry).classList.remove("is-active");
+      // getNavLink(nextEntry).classList.add("is-active");
+      // const $navLink = getNavLink(nextEntry);
+      // const hash = $navLink.getAttribute("href");
+      // $navLink.classList.add("is-active");
+      // if (window.location.hash !== hash) {
+      //   history.pushState({}, window.title, hash);
+      // }
       currentEntry = nextEntry;
     }
   },

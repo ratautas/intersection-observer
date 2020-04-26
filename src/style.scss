@@ -161,3 +161,14 @@ $color-primary: #ff3454;
     height:10px;
   }
 }
+
+img {
+  display: block;
+  width: 100%;
+  transform-origin: 50% 100%;
+}
+
+video {
+  display: block;
+  width: 100%;
+}
