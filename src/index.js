@@ -1,8 +1,9 @@
-import "./style.scss";
+import "./scss/style";
 
-import "./autoVideo";
-import "./lazyImgZoom";
-import "./stickyNav";
-import "./infiniteScroll";
-import "./detectDevice";
-import "./sectionNav";
+import "./observers/autoVideo";
+import "./observers/toggleHeader";
+import "./observers/detectDevice";
+import "./observers/infiniteScroll";
+import "./observers/lazyImgAppear";
+import "./observers/stickyNav";
+import "./observers/sectionNav";

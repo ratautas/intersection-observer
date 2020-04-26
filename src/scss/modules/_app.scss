@@ -1,0 +1,90 @@
+@import '../variables';
+
+.app {
+  &__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    transition: background-color 120ms ease-out, padding 160ms ease-out;
+    z-index: 2;
+  }
+  &__logo {
+    display: inline-block;
+    padding: 8px 16px;
+    font-weight: 900;
+    color: #fff;
+    background-color: $color-primary;
+    transition: color 160ms ease-out, background-color 120ms ease-out,padding 160ms ease-out;
+  }
+  &__hero {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__container {
+    padding: 0 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__sidebar {
+    width: 40%;
+    padding: 16px 32px 0 0;
+  }
+  &__content {
+    width: 60%;
+    position: relative;
+  }
+  &__page {
+    position: relative;
+    z-index: 1;
+    padding: 0 0 32px;
+  }
+  &__section {
+    position: relative;
+    margin: 1em 0;
+  }
+  &__sticker {
+    background-color: $color-primary;
+    color: #fff;
+    padding: 16px;
+    bottom: 0;
+    left: 0;
+    top: 86px;
+    position: sticky;
+    z-index: 10;
+  }
+  &__sticker-sentry {
+    height: 100px;
+    background-color: black;
+    z-index: 11;
+    position: relative;
+    margin-bottom: -100px;
+  }
+}
+
+// tablet
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .app {
+    &__hero {
+      height: 200px;
+    }
+  }
+}
+// mobile
+@media screen and (max-width: 481px) {
+  .app {
+    &__hero {
+      height: 120px;
+    }
+  }
+}

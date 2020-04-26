@@ -1,0 +1,25 @@
+@import '../../scss/variables';
+
+#header-sentry {
+  display: block;
+  height: 1px;
+  margin-bottom: -1px;
+// for indication only:
+  position: relative;
+  z-index: 3;
+  outline: solid 1px red;
+}
+
+.header-sticky {
+  .app {
+    &__header {
+      padding: 8px 16px;
+      background-color: $color-black;
+    }
+    &__logo {
+      padding: 4px 16px;
+      background-color: $color-white;
+      color: $color-primary;
+    }
+    }
+}
