@@ -1,0 +1,28 @@
+*, *:before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Avenir Next', 'Avenir', Roboto, sans-serif;
+  color: $color-black;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+video {
+  display: block;
+  width: 100%;
+}
+
+ol {
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+
+h4 {
+  margin: 0;
+}

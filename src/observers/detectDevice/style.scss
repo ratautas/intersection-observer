@@ -1,0 +1,21 @@
+#mobile-sentry {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 480px;
+  // for indication only:
+  z-index: 5;
+  outline: solid 1px blue;
+}
+
+#tablet-sentry {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 1024px;
+  // for indication only:
+  z-index: 4;
+  outline: solid 1px green;
+}
